@@ -27,9 +27,9 @@ Cada `git push` na branch `main` gera um novo deploy automático.
 Tudo está marcado dentro do `index.html` com o prefixo `>>>`. São 3 itens:
 
 ### 1. Domínio
-As tags `canonical`, `og:url`, `og:image` e `twitter:image` usam
-`https://ebook-mp-google.vercel.app/` como padrão. Se você usar um **domínio
-próprio** na Vercel, substitua essa URL no `index.html`, no `robots.txt` e no `sitemap.xml`.
+✅ Configurado: **`https://ebook.mppartners.com.br/`** (canonical, OG, robots e sitemap).
+Requer o domínio adicionado no projeto da Vercel (Settings → Domains) e o
+CNAME `ebook → cname.vercel-dns.com` na zona DNS da Hostinger.
 
 ### 2. Imagem de compartilhamento (og:image)
 Gere uma imagem **1200×630px** (capa do e-book / oferta) e salve como
