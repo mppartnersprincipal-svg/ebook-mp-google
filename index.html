@@ -42,30 +42,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Acelera o redirecionamento pro checkout ao clicar no CTA -->
 <link rel="preconnect" href="https://ggcheckout.app">
+<!-- Acelera o carregamento do Meta Pixel -->
+<link rel="preconnect" href="https://connect.facebook.net">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" media="print" onload="this.media='all'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"></noscript>
 
 <!-- ============================================================
-     >>> RASTREAMENTO DE TRÁFEGO — COLE SEUS IDs AQUI <<<
-     A página funciona sem preencher; os cliques nos botões já
-     disparam eventos automaticamente QUANDO os pixels existirem.
-
-     1) META PIXEL (Facebook/Instagram Ads): descomente e troque SEU_PIXEL_ID
-     2) GOOGLE (GA4 / Google Ads): descomente e troque G-XXXX / AW-XXXX
+     RASTREAMENTO DE TRÁFEGO
+     (1) META PIXEL: ✓ ATIVO — "Pixel Ebook Google MP" (ID 1584286433549777)
+     (2) GOOGLE (GA4 / Google Ads): descomente abaixo e troque G-XXXX / AW-XXXX
+     Os botões de compra já disparam InitiateCheckout (Meta) e
+     begin_checkout (Google) automaticamente no clique.
      ============================================================ -->
 
-<!-- (1) META PIXEL — descomente e preencha
+<!-- (1) META PIXEL — ativo -->
 <script>
 !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
 n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','SEU_PIXEL_ID');
+fbq('init','1584286433549777');
 fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/></noscript>
--->
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1584286433549777&ev=PageView&noscript=1"/></noscript>
 
 <!-- (2) GOOGLE TAG (GA4 + Google Ads) — descomente e preencha
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>

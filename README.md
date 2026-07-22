@@ -37,14 +37,13 @@ Gere uma imagem **1200×630px** (capa do e-book / oferta) e salve como
 WhatsApp, Instagram e redes. Sem ela, o link compartilha sem prévia.
 
 ### 3. Pixels de rastreamento
-No `<head>` do `index.html` há dois blocos comentados prontos:
+- **Meta Pixel** → ✅ **instalado e ativo** ("Pixel Ebook Google MP", ID `1584286433549777`).
+  Dispara `PageView` no carregamento e `InitiateCheckout` no clique dos botões.
+- **Google tag** (GA4 / Google Ads) → ainda comentado no `<head>`; troque
+  `G-XXXXXXX` / `AW-XXXXXXXXX` e descomente quando for usar.
 
-- **Meta Pixel** (Facebook/Instagram Ads) → troque `SEU_PIXEL_ID` e descomente.
-- **Google tag** (GA4 / Google Ads) → troque `G-XXXXXXX` / `AW-XXXXXXXXX` e descomente.
-
-Os cliques nos botões de compra já disparam os eventos `InitiateCheckout`
-(Meta) e `begin_checkout` (Google) automaticamente — só passam a registrar
-quando os pixels estiverem instalados.
+O mesmo Pixel ID deve estar configurado na GGCheckout (integração nativa,
+de preferência com o token da API de Conversões) para registrar o `Purchase`.
 
 > **Importante:** para medir a **compra concluída**, o pixel também precisa
 > estar na página de checkout/obrigado (`ggcheckout.app`). Esta LP mede apenas
