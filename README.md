@@ -32,9 +32,10 @@ Requer o domínio adicionado no projeto da Vercel (Settings → Domains) e o
 CNAME `ebook → cname.vercel-dns.com` na zona DNS da Hostinger.
 
 ### 2. Imagem de compartilhamento (og:image)
-Gere uma imagem **1200×630px** (capa do e-book / oferta) e salve como
-`assets/og-image.jpg`. É a imagem que aparece ao compartilhar o link no
-WhatsApp, Instagram e redes. Sem ela, o link compartilha sem prévia.
+✅ Pronta: `assets/og-image.jpg` (1200×630) — aparece ao compartilhar o link
+no WhatsApp, Instagram e redes. Se atualizar a arte, mantenha o mesmo nome
+de arquivo e use o [Sharing Debugger](https://developers.facebook.com/tools/debug/)
+para limpar o cache da Meta.
 
 ### 3. Pixels de rastreamento
 - **Meta Pixel** → ✅ **instalado e ativo** ("Pixel Ebook Google MP", ID `1584286433549777`).
