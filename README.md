@@ -68,10 +68,10 @@ sitemap.xml         Mapa do site (1 página)
 ## 🎯 Checkout
 
 O botão de compra aponta para o checkout no domínio próprio (GGCheckout):
-`https://pay.mppartners.com.br/checkout/v2/eUguTMM9upibnKAKUj0R`
+`https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R`
 
 (CNAME `pay → pay.ggcheckout.app` na zona DNS da Hostinger. A URL antiga
-`ggcheckout.app/checkout/v2/...` continua válida como fallback.)
+`ggcheckout.app/checkout/v4/...` continua válida como fallback.)
 
 Para trocar, faça um "localizar e substituir" dessa URL no `index.html`.
 
