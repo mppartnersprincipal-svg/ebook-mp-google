@@ -360,14 +360,6 @@ strong{color:#fff}
 .footer{background:var(--bg);border-top:1px solid var(--border);padding:32px clamp(20px,5vw,48px)}
 .footer .row{max-width:1100px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
 
-/* ---------- Sticky mobile CTA ---------- */
-.sticky-cta{
-  position:fixed;left:12px;right:12px;bottom:12px;bottom:max(12px,env(safe-area-inset-bottom));
-  z-index:60;display:none;transform:translateY(160%);transition:transform .35s var(--ease);
-  box-shadow:0 10px 30px rgba(0,0,0,.5),0 0 0 1px rgba(0,0,0,.4);
-}
-.sticky-cta.show{transform:none}
-
 /* ---------- Scroll reveal ---------- */
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease) var(--d,0ms),transform .7s var(--ease) var(--d,0ms)}
 .reveal.in{opacity:1;transform:none}
@@ -389,10 +381,6 @@ strong{color:#fff}
   .footer .row{justify-content:center;text-align:center}
   .hero__ctawrap,.price-card .btn{max-width:100%}
 }
-@media (max-width:768px){
-  .sticky-cta{display:flex}
-}
-
 /* ============================================================
    ACESSIBILIDADE — respeita "reduzir movimento"
    ============================================================ */
@@ -970,9 +958,6 @@ strong{color:#fff}
   </div>
 </footer>
 
-<!-- CTA fixo no mobile -->
-<a class="btn sticky-cta" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Aparecer no Google → R$18,90</a>
-
 <script>
 (function(){
   var rm = false;
@@ -1037,15 +1022,6 @@ strong{color:#fff}
       counters.forEach(finalCount);
     }
   } catch(e){ counters.forEach(finalCount); }
-
-  /* CTA fixo no mobile */
-  var sticky = document.querySelector('.sticky-cta');
-  if (sticky){
-    window.addEventListener('scroll', function(){
-      if (window.scrollY > 620) sticky.classList.add('show');
-      else sticky.classList.remove('show');
-    }, {passive:true});
-  }
 
   /* Rastreamento de clique nos CTAs (seguro mesmo sem pixel instalado) */
   document.querySelectorAll('[data-cta]').forEach(function(a){
