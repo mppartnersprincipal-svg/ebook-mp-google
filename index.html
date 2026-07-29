@@ -1032,7 +1032,20 @@ strong{color:#fff}
         var ch = s.textContent;
         setTimeout(type, ch === ' ' ? 14 : (/[.,]/.test(ch) ? 300 : 27));
       }
-      setTimeout(type, 300);
+      /* Só começa depois do 1º frame pintado com fontes prontas (senão no mobile
+         a digitação roda antes de a tela aparecer). rAF não dispara em aba oculta,
+         então aba em segundo plano só digita quando ficar visível. */
+      var kicked = false;
+      function kick(){
+        if (kicked) return; kicked = true;
+        requestAnimationFrame(function(){ requestAnimationFrame(function(){ setTimeout(type, 350); }); });
+      }
+      if (document.fonts && document.fonts.ready && document.fonts.ready.then) {
+        document.fonts.ready.then(kick, kick);
+        setTimeout(kick, 1600);
+      } else {
+        setTimeout(kick, 400);
+      }
     }
   } catch(e){
     document.querySelectorAll('.tw-char').forEach(function(s){ s.classList.add('on'); });
