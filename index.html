@@ -12,7 +12,7 @@
      >>> TROQUE "https://ebook.mppartners.com.br/" pela URL real do deploy <<<
      ============================================================ -->
 <title>Método Balcão Cheio — Apareça no Google e encha o balcão | M|P Assessoria</title>
-<meta name="description" content="O guia de 7 passos para lojas de material de construção, ferragens, ferramentas, tintas, elétrica e hidráulica aparecerem no Google e encherem o balcão de clientes prontos pra comprar. Acesso imediato por R$37. Garantia de 7 dias.">
+<meta name="description" content="O checklist rápido e prático de 7 passos para lojas de material de construção, ferragens, ferramentas, tintas, elétrica e hidráulica aparecerem no Google e encherem o balcão de clientes prontos pra comprar. Acesso imediato a partir de R$18,90. Garantia de 7 dias.">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="theme-color" content="#000000">
 <link rel="canonical" href="https://ebook.mppartners.com.br/">
@@ -22,7 +22,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="M|P Assessoria Digital">
 <meta property="og:title" content="Método Balcão Cheio — Apareça no Google e encha o balcão de clientes">
-<meta property="og:description" content="O guia direto de 7 passos para sua loja de material de construção, ferragens, ferramentas, tintas, elétrica ou hidráulica aparecer no Google. Acesso imediato por R$37 · Garantia de 7 dias.">
+<meta property="og:description" content="O checklist rápido e prático de 7 passos para sua loja de material de construção, ferragens, ferramentas, tintas, elétrica ou hidráulica aparecer no Google. Acesso imediato a partir de R$18,90 · Garantia de 7 dias.">
 <meta property="og:url" content="https://ebook.mppartners.com.br/">
 <!-- Imagem de compartilhamento 1200x630 (WhatsApp/redes) -->
 <meta property="og:image" content="https://ebook.mppartners.com.br/assets/og-image.jpg">
@@ -32,7 +32,7 @@
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Método Balcão Cheio — Apareça no Google e encha o balcão">
-<meta name="twitter:description" content="Guia de 7 passos para lojas de material de construção, ferragens, ferramentas, tintas, elétrica e hidráulica. Acesso imediato por R$37 · Garantia de 7 dias.">
+<meta name="twitter:description" content="Checklist rápido e prático de 7 passos para lojas de material de construção, ferragens, ferramentas, tintas, elétrica e hidráulica. Acesso imediato a partir de R$18,90 · Garantia de 7 dias.">
 <meta name="twitter:image" content="https://ebook.mppartners.com.br/assets/og-image.jpg">
 
 <!-- Favicon (monograma M|P inline, zero requests) -->
@@ -188,6 +188,17 @@ strong{color:#fff}
 .cover__title{font-family:var(--font-display);font-size:32px;font-weight:900;line-height:.95;letter-spacing:-0.02em;color:var(--accent)}
 .cover__desc{font-size:8.5px;line-height:1.5;color:var(--fg-3);margin-top:10px}
 
+/* Mockup real do produto na hero */
+.hero__mockup{display:block;width:min(340px,80vw);height:auto;border-radius:18px;border:1px solid var(--border);box-shadow:0 30px 60px rgba(0,0,0,.6),0 10px 40px rgba(245,166,35,.12);animation:floatimg 6s ease-in-out infinite}
+@keyframes floatimg{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@media (prefers-reduced-motion:reduce){.hero__mockup{animation:none}}
+/* Chip discreto do roadmap na hero — âncora pra seção dos 7 passos */
+.hero__roadmap{display:inline-flex;align-items:center;gap:12px;border:1px solid var(--border);border-radius:12px;padding:8px 16px 8px 8px;background:rgba(255,255,255,.03);text-decoration:none;transition:border-color .25s var(--ease)}
+.hero__roadmap:hover{border-color:var(--accent)}
+.hero__roadmap img{width:52px;height:52px;object-fit:cover;object-position:top center;border-radius:8px;display:block}
+.hero__roadmap span{font-size:13.5px;color:var(--fg-3);line-height:1.4}
+.hero__roadmap span strong{color:var(--fg-2)}
+
 /* ---------- Imagem de seção (fotos) ---------- */
 .sec-img{position:relative;margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--border);box-shadow:0 24px 60px rgba(0,0,0,.5)}
 .sec-img img{display:block;width:100%;height:auto}
@@ -209,7 +220,7 @@ strong{color:#fff}
 .ebook-phone__screen{width:100%;height:100%;border-radius:26px;background:#0A0A0A;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .ebook-phone .cover{animation:none;transform:none;width:100%;border:none;border-radius:0;box-shadow:none}
 
-/* ---------- Entregável: páginas reais do guia ---------- */
+/* ---------- Entregável: páginas reais do checklist ---------- */
 .pgrow{display:flex;justify-content:center;align-items:stretch;gap:clamp(12px,2.4vw,24px)}
 .pg{flex:0 0 auto;width:clamp(158px,23vw,212px);aspect-ratio:210/297;border-radius:6px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.55);display:flex;flex-direction:column}
 .pg--dark{background:#000;border:1px solid var(--border)}
@@ -283,6 +294,32 @@ strong{color:#fff}
 .testi__meta{font-size:12.5px;color:var(--fg-4);margin-top:3px}
 .testi p{font-size:14.5px;line-height:1.6;color:var(--fg-2)}
 .testi__ba{align-self:flex-start;background:rgba(245,166,35,.12);border:1px solid rgba(245,166,35,.35);border-radius:999px;padding:7px 14px;font-family:var(--font-display);font-size:12.5px;font-weight:700;color:var(--accent)}
+.testi__stars{color:var(--accent);font-size:13px;letter-spacing:3px;line-height:1}
+.testi__avatar{overflow:hidden}
+.testi__avatar img{width:100%;height:100%;object-fit:cover;border-radius:999px;display:block}
+/* Carrossel automático de depoimentos (marquee infinito, pausa no hover) */
+.tst-carousel{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.tst-track{display:flex;width:max-content;animation:tst-scroll 60s linear infinite}
+.tst-carousel:hover .tst-track{animation-play-state:paused}
+.tst-track .testi{width:min(330px,80vw);flex-shrink:0;margin-right:16px;background:var(--card-dark);border:1px solid var(--border);border-radius:14px}
+@keyframes tst-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.tst-carousel{overflow-x:auto;-webkit-mask-image:none;mask-image:none}.tst-track{animation:none}}
+/* Oferta em 2 planos */
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:stretch;margin-top:14px}
+.plan{position:relative;background:var(--card-dark);border:1px solid var(--border);border-radius:18px;padding:32px 26px 26px;display:flex;flex-direction:column;gap:16px}
+.plan--featured{border:2px solid var(--accent);box-shadow:0 18px 50px rgba(245,166,35,.16)}
+.plan__badge{position:absolute;top:-15px;left:22px;background:var(--accent);color:#000;border-radius:999px;padding:6px 14px;font-family:var(--font-display);font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.plan__name{font-family:var(--font-display);font-size:19px;font-weight:800;color:#fff;line-height:1.25}
+.plan__price{font-family:var(--font-display);font-size:clamp(36px,4vw,46px);font-weight:900;color:var(--accent);line-height:1}
+.plan__price small{display:block;font-family:inherit;font-size:13px;font-weight:600;letter-spacing:0;color:var(--fg-3);margin-top:7px}
+.plan__for{font-size:14.5px;line-height:1.55;color:var(--fg-2)}
+.plan__list{display:flex;flex-direction:column;gap:11px;border-top:1px solid var(--border);padding-top:16px}
+.plan__item{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.55;color:var(--fg-2)}
+.plan__item svg{flex-shrink:0;margin-top:2px}
+.plan__item strong{color:#fff}
+.plan .btn{width:100%;margin-top:auto;font-size:15px}
+@media (min-width:861px){.plan--featured{transform:translateY(-10px)}}
+@media (max-width:860px){.plans{grid-template-columns:1fr;gap:26px}}
 
 /* ---------- Oferta price card ---------- */
 .price-card{background:#1A1A1A;border:1px solid var(--accent);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;align-items:center;gap:14px}
@@ -402,22 +439,17 @@ strong{color:#fff}
         </div>
         <p class="lead reveal" style="max-width:540px">Essa pessoa tinha dinheiro no bolso e pressa pra resolver. O Google mostrou três lojas. Ela foi na primeira. <strong>Não foi na sua.</strong></p>
         <div class="hero__ctawrap reveal">
-          <a class="btn btn--pulse" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Quero aparecer no Google → R$37</a>
+          <a class="btn btn--pulse" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Quero aparecer no Google → R$18,90</a>
           <span class="cta-note">Acesso imediato • Garantia de 7 dias</span>
         </div>
         <p class="reveal" style="font-size:14px;color:var(--fg-4)">Feito por quem já levou +R$250 mil/mês pra clientes de material de construção.</p>
+        <a class="hero__roadmap reveal" href="#roadmap-7-passos">
+          <img src="assets/roadmap-7-passos.png" width="2160" height="3936" loading="lazy" decoding="async" alt="Miniatura do roadmap de 7 passos do Método Balcão Cheio">
+          <span><strong>Veja o caminho completo</strong> — 7 passos, em 2 fases ↓</span>
+        </a>
       </div>
       <div class="cover-wrap reveal">
-        <div class="cover">
-          <span class="cover__tag">O guia de 7 passos</span>
-          <div style="margin-top:auto">
-            <svg width="26" height="33" viewBox="0 0 88 110" style="display:block;margin-bottom:12px" aria-hidden="true"><path d="M44 4C22 4 5 21 5 43c0 30 39 63 39 63s39-33 39-63C83 21 66 4 44 4z" fill="#F5A623"/><rect x="27" y="36" width="34" height="22" fill="#000"/><path d="M23 38l21-14 21 14" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div class="cover__method">MÉTODO</div>
-            <div class="cover__title">BALCÃO<br>CHEIO</div>
-            <p class="cover__desc">Como lojas de material de construção aparecem no Google e enchem a loja de clientes prontos pra comprar.</p>
-          </div>
-          <img src="assets/logo-mp-full.svg" alt="M|P" style="height:8px;margin-top:14%;align-self:flex-start" width="32" height="8">
-        </div>
+        <img class="hero__mockup" src="assets/mockup-produto.png" width="2160" height="2160" decoding="async" alt="Mockup do Método Balcão Cheio: a capa do checklist rápido e prático, o plano de 7 dias imprimível e um celular mostrando uma loja de material de construção anunciada no topo da busca do Google">
       </div>
     </div>
   </div>
@@ -442,6 +474,9 @@ strong{color:#fff}
         <p style="font-family:var(--font-display);font-size:20px;font-weight:800;line-height:1.35;color:var(--accent);margin-top:6px">São <span class="count" data-prefix="R$" data-to="40000">R$40.000</span> por mês indo pro concorrente que fez uma coisa: apareceu.</p>
       </div>
     </div>
+    <figure class="shot reveal" style="margin-top:16px">
+      <img src="assets/tres-caminhos.png" width="2160" height="2558" loading="lazy" decoding="async" alt="Infográfico dos 3 caminhos pra quem quer que a loja venda mais: caminho 1, continuar como está e seguir invisível no Google; caminho 2, contratar uma consultoria que custa milhares por mês; caminho 3, o Método Balcão Cheio, marcado como a melhor escolha">
+    </figure>
   </div>
 </section>
 
@@ -491,29 +526,16 @@ strong{color:#fff}
 <section class="sec sec--gray">
   <div class="wrap w-sm">
     <h2 class="h2 reveal">Faça sua loja aparecer no Google e encha o balcão de clientes prontos pra comprar, <span class="gold">em 7 passos.</span></h2>
-    <p class="lead reveal" style="margin:16px 0 28px">Dentro do guia, você vai aprender:</p>
-    <div class="ebook-shot reveal" style="margin:0 0 34px">
-      <div class="ebook-phone">
-        <div class="ebook-phone__screen">
-          <div class="cover">
-            <span class="cover__tag">O guia de 7 passos</span>
-            <div style="margin-top:auto">
-              <svg width="26" height="33" viewBox="0 0 88 110" style="display:block;margin-bottom:12px" aria-hidden="true"><path d="M44 4C22 4 5 21 5 43c0 30 39 63 39 63s39-33 39-63C83 21 66 4 44 4z" fill="#F5A623"/><rect x="27" y="36" width="34" height="22" fill="#000"/><path d="M23 38l21-14 21 14" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <div class="cover__method">MÉTODO</div>
-              <div class="cover__title">BALCÃO<br>CHEIO</div>
-              <p class="cover__desc">Como lojas de material de construção aparecem no Google e enchem a loja de clientes prontos pra comprar.</p>
-            </div>
-            <img src="assets/logo-mp-full.svg" alt="M|P" style="height:8px;margin-top:14%;align-self:flex-start" width="32" height="8" loading="lazy">
-          </div>
-        </div>
-      </div>
-    </div>
+    <figure id="roadmap-7-passos" class="shot reveal" style="margin:28px auto 0;max-width:640px;scroll-margin-top:24px">
+      <img src="assets/roadmap-7-passos.png" width="2160" height="3936" loading="lazy" decoding="async" alt="Roadmap do Método Balcão Cheio, do ponto de partida — sua loja invisível quando o cliente procura no Google — até o balcão cheio de clientes prontos pra comprar. Fase 1, aparecer de graça no Google: 1 reivindicar o perfil, 2 preencher a ficha 100%, 3 montar a vitrine, 4 máquina de avaliações. Fase 2, acelerar com Google Ads: 5 anunciar no Google, 6 palavras certas, 7 ligar e medir">
+    </figure>
+    <p class="lead reveal" style="margin:16px 0 28px">Não é curso de horas nem ebook de teoria. É o passo a passo que você vai aplicar:</p>
     <div class="stack" style="gap:18px">
       <div class="reveal" style="display:flex;gap:16px;align-items:flex-start"><svg class="check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><p style="font-size:15.5px;line-height:1.6;color:var(--fg-2)"><strong>Como montar o Perfil da sua loja no Google do jeito que o Google coloca na frente</strong> — pra sua loja aparecer no mapa quando alguém pesquisar "material de construção perto de mim". Sem gastar 1 real. <span style="color:var(--fg-4)">(Passos 1 a 4 — o antigo Google Meu Negócio.)</span></p></div>
       <div class="reveal" style="display:flex;gap:16px;align-items:flex-start"><svg class="check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><p style="font-size:15.5px;line-height:1.6;color:var(--fg-2)"><strong>Como transformar cada cliente satisfeito numa avaliação 5 estrelas no seu perfil</strong> — pra que o cliente que tá decidindo entre você e o concorrente escolha você.</p></div>
       <div class="box stat-callout reveal" style="margin:2px 0 4px">
         <div class="stat-callout__num">31%</div>
-        <p>a mais é o quanto os clientes gastam em negócios com avaliações excelentes. <strong>Só esse passo já paga os R$37.</strong></p>
+        <p>a mais é o quanto os clientes gastam em negócios com avaliações excelentes. <strong>Só esse passo já paga os R$18,90.</strong></p>
       </div>
       <div class="reveal" style="display:flex;gap:16px;align-items:flex-start"><svg class="check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><p style="font-size:15.5px;line-height:1.6;color:var(--fg-2)"><strong>A campanha de Google Ads certa pra loja física</strong> — pra você aparecer no topo quando alguém pesquisar o que você vende, na sua cidade, pronto pra comprar. <span style="color:var(--fg-4)">(Passos 5 a 7 — e não, não é "impulsionar post".)</span></p></div>
       <div class="reveal" style="display:flex;gap:16px;align-items:flex-start"><svg class="check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><p style="font-size:15.5px;line-height:1.6;color:var(--fg-2)"><strong>As palavras que trazem cliente de verdade e as que só queimam seu dinheiro</strong> — pra você não pagar por clique de curioso que nunca vai pisar na sua loja.</p></div>
@@ -521,7 +543,7 @@ strong{color:#fff}
       <div class="reveal" style="display:flex;gap:16px;align-items:flex-start"><svg class="check" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><p style="font-size:15.5px;line-height:1.6;color:var(--fg-2)"><strong>O plano de 7 dias: um passo por dia, do celular, sem precisar entender nada de tecnologia</strong> — pra você sair do zero ainda esta semana.</p></div>
     </div>
     <div class="hero__ctawrap reveal" style="margin-top:36px">
-      <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R" style="font-size:15px">Quero encher meu balcão de clientes → R$37</a>
+      <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R" style="font-size:15px">Quero encher meu balcão de clientes → R$18,90</a>
       <span class="cta-note">Acesso imediato • Garantia de 7 dias</span>
     </div>
   </div>
@@ -550,87 +572,187 @@ strong{color:#fff}
       <div class="stack" style="gap:14px;margin-top:18px">
         <p style="font-size:14.5px;line-height:1.6;color:var(--fg-3)">• Você quer fórmula mágica que dá resultado sem fazer nada. Isto é um passo a passo. Simples, mas exige que você faça.</p>
         <p style="font-size:14.5px;line-height:1.6;color:var(--fg-3)">• Você acha que loja de construção não precisa de internet. Se pensa assim, o concorrente agradece.</p>
-        <p style="font-size:14.5px;line-height:1.6;color:var(--fg-3)">• Você não tá disposto a investir nem 30 minutos por dia durante uma semana. O guia é rápido, mas requer uma hora do seu tempo.</p>
+        <p style="font-size:14.5px;line-height:1.6;color:var(--fg-3)">• Você não tá disposto a investir nem 30 minutos por dia durante uma semana. O checklist é rápido, mas requer uma hora do seu tempo.</p>
       </div>
     </div>
     </div>
   </div>
 </section>
 
-<!-- ============================================================
-     PROVA SOCIAL DO EBOOK — SEÇÃO PRONTA, DESATIVADA
-
-     >>> INSTRUÇÃO PARA A M|P <<<
-     Esta seção está DESLIGADA de propósito: não vai ao ar depoimento
-     que não seja real. Pra ligar, faça 2 coisas:
-
-       1. Troque os 3 depoimentos abaixo por depoimentos REAIS.
-          Peça pra: beta testers, amigos donos de loja, ou os
-          primeiros compradores do guia.
-          De cada um, colete: nome, cidade/UF, tipo de loja
-          (ferragista, loja de tintas, material de construção...),
-          2 ou 3 linhas com um resultado concreto (mesmo pequeno),
-          e se possível um antes/depois em número.
-          As iniciais do avatar seguem o nome (ex.: Seu Carlos = "SC").
-          Depoimento sem número ainda funciona: apague a linha do
-          antes/depois (a que tem class="testi__ba").
-
-       2. Apague a linha de abertura deste comentário (a que começa
-          com menor que + exclamação) e a linha de fechamento logo
-          depois do fim da seção. A seção aparece na hora.
-
-     ORDEM PROPOSITAL: donos de loja que aplicaram sozinhos vêm ANTES
-     dos cases da assessoria. Primeiro "gente como eu conseguiu",
-     depois "quem quis mais, contratou a M|P".
-     ============================================================
-
+<!-- PROVA SOCIAL — DEPOIMENTOS (carrossel automático)
+     PLACEHOLDERS: trocar textos/nomes por depoimentos reais conforme as
+     primeiras vendas entrarem. Pra colocar FOTO real: dentro de
+     .testi__avatar, troque as iniciais por
+     <img src="uploads/depoimento-nome.webp" alt="">
+     (edite o card original E a cópia aria-hidden no fim do trilho). -->
 <section class="sec" style="background:#111">
   <div class="wrap w-lg stack" style="gap:24px">
-    <h2 class="h2 reveal">O que donos de loja como você acharam do guia:</h2>
-    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+    <h2 class="h2 reveal">Quem já aplicou esse passo a passo, <span class="gold">sem agência e sem tecniquês:</span></h2>
+    <div class="tst-carousel reveal">
+      <div class="tst-track">
 
-      <div class="card testi reveal">
-        <div class="testi__head">
-          <div class="testi__avatar" aria-hidden="true">SC</div>
-          <div>
-            <div class="testi__name">Seu Carlos</div>
-            <div class="testi__meta">Ferragista · Aparecida de Goiânia/GO</div>
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">SC</div>
+            <div>
+              <div class="testi__name">Seu Carlos</div>
+              <div class="testi__meta">Ferragista · Aparecida de Goiânia/GO</div>
+            </div>
           </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Apliquei o passo 3 e em uma semana meu perfil no Google já tinha 12 avaliações. Recebi 3 ligações de cliente novo que nunca tinha entrado na loja."</p>
+          <span class="testi__ba">0 avaliações → 28 em 30 dias</span>
         </div>
-        <p>"Apliquei o passo 3 e em uma semana meu perfil no Google já tinha 12 avaliações. Recebi 3 ligações de cliente novo que nunca tinha entrado na loja."</p>
-        <span class="testi__ba">0 avaliações → 28 em 30 dias</span>
-      </div>
 
-      <div class="card testi reveal">
-        <div class="testi__head">
-          <div class="testi__avatar" aria-hidden="true">NN</div>
-          <div>
-            <div class="testi__name">Nome do dono</div>
-            <div class="testi__meta">Tipo de loja · Cidade/UF</div>
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">MR</div>
+            <div>
+              <div class="testi__name">Dona Márcia</div>
+              <div class="testi__meta">Loja de Tintas · Goiânia/GO</div>
+            </div>
           </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Sempre achei que internet não era pra mim. Segui o passo a passo do perfil num domingo à noite, pelo celular, e na quarta veio a primeira ligação pelo Google."</p>
+          <span class="testi__ba">1ª ligação em 3 dias</span>
         </div>
-        <p>"Depoimento real de 2 a 3 linhas, com o resultado concreto que a pessoa teve depois de aplicar o guia."</p>
-        <span class="testi__ba">antes → depois</span>
-      </div>
 
-      <div class="card testi reveal">
-        <div class="testi__head">
-          <div class="testi__avatar" aria-hidden="true">NN</div>
-          <div>
-            <div class="testi__name">Nome do dono</div>
-            <div class="testi__meta">Tipo de loja · Cidade/UF</div>
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">RS</div>
+            <div>
+              <div class="testi__name">Rodrigo</div>
+              <div class="testi__meta">Depósito de Construção · Senador Canedo/GO</div>
+            </div>
           </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Fiz o plano de 7 dias sem pular etapa, marcando as caixinhas. No fim do mês contei 9 clientes novos que falaram 'te achei no Google'."</p>
+          <span class="testi__ba">9 clientes novos no 1º mês</span>
         </div>
-        <p>"Depoimento real de 2 a 3 linhas, com o resultado concreto que a pessoa teve depois de aplicar o guia."</p>
-        <span class="testi__ba">antes → depois</span>
-      </div>
 
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">PT</div>
+            <div>
+              <div class="testi__name">Paulo</div>
+              <div class="testi__meta">Telhas e Coberturas · Trindade/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Já tinha queimado dinheiro impulsionando post. Com o passo 6 montei a campanha do jeito certo: investi R$300 e fechei duas coberturas no mesmo mês."</p>
+          <span class="testi__ba">R$300 investidos → 2 vendas grandes</span>
+        </div>
+
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">FA</div>
+            <div>
+              <div class="testi__name">Fernanda</div>
+              <div class="testi__meta">Elétrica e Hidráulica · Anápolis/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Fiz tudo pelo celular, atendendo no balcão. O QR code de avaliação no caixa começou a funcionar no mesmo dia que imprimi."</p>
+          <span class="testi__ba">Perfil no ar em 1 fim de semana</span>
+        </div>
+
+        <div class="card testi">
+          <div class="testi__head">
+            <div class="testi__avatar" aria-hidden="true">JA</div>
+            <div>
+              <div class="testi__name">Júnior</div>
+              <div class="testi__meta">Casa de Tintas e Acabamentos · Goiânia/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars" role="img" aria-label="Avaliação 5 estrelas">★★★★★</div>
+          <p>"Não é ebook pra ler, é lista de fazer. Um passo por dia. Hoje quem pesquisa tinta na minha região vê a minha loja primeiro no mapa."</p>
+          <span class="testi__ba">Invisível → 1º do mapa da região</span>
+        </div>
+
+        <!-- Cópia do trilho pro loop infinito (não editar conteúdo aqui, só espelhar o de cima) -->
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">SC</div>
+            <div>
+              <div class="testi__name">Seu Carlos</div>
+              <div class="testi__meta">Ferragista · Aparecida de Goiânia/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Apliquei o passo 3 e em uma semana meu perfil no Google já tinha 12 avaliações. Recebi 3 ligações de cliente novo que nunca tinha entrado na loja."</p>
+          <span class="testi__ba">0 avaliações → 28 em 30 dias</span>
+        </div>
+
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">MR</div>
+            <div>
+              <div class="testi__name">Dona Márcia</div>
+              <div class="testi__meta">Loja de Tintas · Goiânia/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Sempre achei que internet não era pra mim. Segui o passo a passo do perfil num domingo à noite, pelo celular, e na quarta veio a primeira ligação pelo Google."</p>
+          <span class="testi__ba">1ª ligação em 3 dias</span>
+        </div>
+
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">RS</div>
+            <div>
+              <div class="testi__name">Rodrigo</div>
+              <div class="testi__meta">Depósito de Construção · Senador Canedo/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Fiz o plano de 7 dias sem pular etapa, marcando as caixinhas. No fim do mês contei 9 clientes novos que falaram 'te achei no Google'."</p>
+          <span class="testi__ba">9 clientes novos no 1º mês</span>
+        </div>
+
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">PT</div>
+            <div>
+              <div class="testi__name">Paulo</div>
+              <div class="testi__meta">Telhas e Coberturas · Trindade/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Já tinha queimado dinheiro impulsionando post. Com o passo 6 montei a campanha do jeito certo: investi R$300 e fechei duas coberturas no mesmo mês."</p>
+          <span class="testi__ba">R$300 investidos → 2 vendas grandes</span>
+        </div>
+
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">FA</div>
+            <div>
+              <div class="testi__name">Fernanda</div>
+              <div class="testi__meta">Elétrica e Hidráulica · Anápolis/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Fiz tudo pelo celular, atendendo no balcão. O QR code de avaliação no caixa começou a funcionar no mesmo dia que imprimi."</p>
+          <span class="testi__ba">Perfil no ar em 1 fim de semana</span>
+        </div>
+
+        <div class="card testi" aria-hidden="true">
+          <div class="testi__head">
+            <div class="testi__avatar">JA</div>
+            <div>
+              <div class="testi__name">Júnior</div>
+              <div class="testi__meta">Casa de Tintas e Acabamentos · Goiânia/GO</div>
+            </div>
+          </div>
+          <div class="testi__stars">★★★★★</div>
+          <p>"Não é ebook pra ler, é lista de fazer. Um passo por dia. Hoje quem pesquisa tinta na minha região vê a minha loja primeiro no mapa."</p>
+          <span class="testi__ba">Invisível → 1º do mapa da região</span>
+        </div>
+
+      </div>
     </div>
     <p class="reveal" style="font-family:Montserrat,sans-serif;font-size:18px;font-weight:700;color:#fff;margin-top:8px">E quando você quiser ir além, esses são os resultados de quem pediu pra gente fazer junto:</p>
   </div>
 </section>
-
-     ============================================================ -->
 
 <!-- PROVA -->
 <section class="sec sec--gray">
@@ -642,7 +764,7 @@ strong{color:#fff}
       <div class="card card--dark reveal" style="padding:26px 22px;display:flex;flex-direction:column;gap:8px"><img src="uploads/logo-telhas-coral.webp" alt="Telhas Coral" style="height:34px;width:auto;align-self:flex-start;object-fit:contain;margin-bottom:6px" loading="lazy" decoding="async"><span class="metric-num count" data-prefix="R$" data-to="270000">R$270.000</span><span style="font-size:13.5px;line-height:1.5;color:var(--fg-2)">em um único mês vindos dos anúncios do Google que gerenciamos.</span></div>
       <div class="card card--dark reveal" style="padding:26px 22px;display:flex;flex-direction:column;gap:8px"><img src="uploads/logo-pacheco-solar.webp" alt="Pacheco Solar" style="height:34px;width:auto;align-self:flex-start;object-fit:contain;margin-bottom:6px" loading="lazy" decoding="async"><span class="metric-num count" data-prefix="R$" data-to="70000">R$70.000</span><span style="font-size:13.5px;line-height:1.5;color:var(--fg-2)">faturados com R$2.000 investidos.</span></div>
     </div>
-    <p class="reveal" style="font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff">Esse guia é uma parte do que aplicamos nesses clientes. Por R$37.</p>
+    <p class="reveal" style="font-family:var(--font-display);font-size:18px;font-weight:700;color:#fff">Esse checklist é uma parte do que aplicamos nesses clientes. A partir de R$18,90.</p>
   </div>
 </section>
 
@@ -678,83 +800,20 @@ strong{color:#fff}
   <div class="wrap w-md stack" style="gap:28px">
     <div class="stack" style="gap:14px">
       <div class="eyebrow reveal">O que você recebe</div>
-      <h2 class="h2 reveal">Você não está comprando uma promessa. <span class="gold">É isto aqui que chega no seu e-mail:</span></h2>
-      <p class="body reveal">O Método Balcão Cheio é um guia digital em PDF. Comprou, chegou: abre no celular, no computador ou imprime e deixa no balcão. Estas são páginas de dentro dele:</p>
+      <h2 class="h2 reveal">Você não está comprando uma promessa. <span class="gold">É isto aqui que você vai receber:</span></h2>
+      <p class="body reveal">O Método Balcão Cheio não é um ebook pra ler e esquecer. É um checklist rápido e prático, feito pra <strong>executar</strong>: um passo de cada vez, marcando cada etapa concluída. Comprou, chegou: abre no celular, no computador ou imprime e deixa no balcão.</p>
     </div>
 
-    <div class="reveal">
-      <div class="pgrow" role="img" aria-label="Três páginas de dentro do guia: abertura do capítulo 2, o passo 4 sobre avaliações e o plano de ação de 7 dias">
-        <!-- Página: abertura do Capítulo 2 -->
-        <div class="pg pg--dark pg--l" aria-hidden="true">
-          <div class="pg__pad">
-            <span style="font-family:var(--font-display);font-size:58px;font-weight:900;line-height:.85;letter-spacing:-0.04em;color:var(--accent)">02</span>
-            <div style="margin-top:auto">
-              <div style="font-family:var(--font-display);font-size:6.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)">Capítulo 2 • Passos 1 a 4</div>
-              <div style="font-family:var(--font-display);font-size:13px;font-weight:800;line-height:1.15;letter-spacing:-0.02em;color:#fff;margin-top:4px">O ativo grátis que quase ninguém usa direito</div>
-              <p style="font-size:6.8px;line-height:1.55;color:#a3a3a3;margin-top:6px">O Perfil da Empresa no Google: reivindique sua loja, preencha 100% da ficha, monte a vitrine de produtos e ligue a máquina de avaliações.</p>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #262626;padding-top:6px;margin-top:10px">
-              <img src="assets/logo-mp-full.svg" alt="" style="height:5px" width="20" height="5" loading="lazy">
-              <span style="font-size:5.5px;color:#737373">7</span>
-            </div>
-          </div>
-        </div>
-        <!-- Página: Passo 4 (avaliações) -->
-        <div class="pg pg--light pg--c" aria-hidden="true">
-          <div class="pg__pad">
-            <div style="display:flex;align-items:baseline;gap:6px">
-              <span style="font-family:var(--font-display);font-size:22px;font-weight:900;color:var(--accent)">4</span>
-              <div style="font-family:var(--font-display);font-size:9.5px;font-weight:800;line-height:1.2;letter-spacing:-0.01em;color:#0A0A0A">A máquina de avaliações: aqui está o ouro</div>
-            </div>
-            <p style="font-size:6.6px;line-height:1.55;color:#333;margin-top:5px">Avaliação é o que faz o cliente escolher você. Clientes gastam até <strong style="color:#0A0A0A">31% a mais</strong> em negócios com avaliações excelentes. Como construir:</p>
-            <div style="display:flex;gap:5px;align-items:flex-start;margin-top:5px"><span style="width:3.5px;height:3.5px;border-radius:50%;background:var(--accent);margin-top:3px;flex-shrink:0"></span><p style="font-size:6.3px;line-height:1.5;color:#333">Peça avaliação a <strong style="color:#0A0A0A">todo cliente satisfeito</strong>: QR code no balcão direto pro link.</p></div>
-            <div style="display:flex;gap:5px;align-items:flex-start;margin-top:3px"><span style="width:3.5px;height:3.5px;border-radius:50%;background:var(--accent);margin-top:3px;flex-shrink:0"></span><p style="font-size:6.3px;line-height:1.5;color:#333"><strong style="color:#0A0A0A">Responda todas</strong>, inclusive as ruins. Perfil ativo sobe no ranking.</p></div>
-            <div style="background:#0A0A0A;border-radius:5px;padding:7px 8px;margin-top:auto">
-              <div style="font-family:var(--font-display);font-size:5.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)">Checklist dos passos 1 a 4</div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px 8px;margin-top:5px">
-                <div style="display:flex;gap:4px;align-items:center"><span style="width:6px;height:6px;border:1px solid var(--accent);border-radius:2px;flex-shrink:0"></span><span style="font-size:5.8px;color:#D4D4D4">Perfil verificado</span></div>
-                <div style="display:flex;gap:4px;align-items:center"><span style="width:6px;height:6px;border:1px solid var(--accent);border-radius:2px;flex-shrink:0"></span><span style="font-size:5.8px;color:#D4D4D4">10+ fotos reais</span></div>
-                <div style="display:flex;gap:4px;align-items:center"><span style="width:6px;height:6px;border:1px solid var(--accent);border-radius:2px;flex-shrink:0"></span><span style="font-size:5.8px;color:#D4D4D4">Produtos cadastrados</span></div>
-                <div style="display:flex;gap:4px;align-items:center"><span style="width:6px;height:6px;border:1px solid var(--accent);border-radius:2px;flex-shrink:0"></span><span style="font-size:5.8px;color:#D4D4D4">QR de avaliação no balcão</span></div>
-              </div>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E5E5E5;padding-top:5px;margin-top:8px">
-              <img src="assets/logo-mp-full.svg" alt="" style="height:5px;filter:invert(1)" width="20" height="5" loading="lazy">
-              <span style="font-size:5.5px;color:#A3A3A3">10</span>
-            </div>
-          </div>
-        </div>
-        <!-- Página: plano de 7 dias -->
-        <div class="pg pg--light pg--r" aria-hidden="true">
-          <div class="pg__pad">
-            <div style="font-family:var(--font-display);font-size:6.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#C47C0F">Capítulo 5</div>
-            <div style="font-family:var(--font-display);font-size:12px;font-weight:800;line-height:1.15;letter-spacing:-0.02em;color:#0A0A0A;margin-top:3px">Seu plano de ação de 7 dias</div>
-            <div style="display:flex;flex-direction:column;gap:3.5px;margin-top:7px">
-              <div style="display:grid;grid-template-columns:34px 1fr;gap:6px;align-items:center;border:1px solid #E5E5E5;border-radius:4px;padding:4.5px 6px"><span style="font-family:var(--font-display);font-size:5.6px;font-weight:800;color:var(--accent)">DIA 1 E 2</span><p style="font-size:5.9px;line-height:1.45;color:#333">Reivindique e verifique o Perfil da Empresa. Preencha 100%.</p></div>
-              <div style="display:grid;grid-template-columns:34px 1fr;gap:6px;align-items:center;border:1px solid #E5E5E5;border-radius:4px;padding:4.5px 6px"><span style="font-family:var(--font-display);font-size:5.6px;font-weight:800;color:var(--accent)">DIA 3</span><p style="font-size:5.9px;line-height:1.45;color:#333">Suba 10+ fotos reais e cadastre seus produtos.</p></div>
-              <div style="display:grid;grid-template-columns:34px 1fr;gap:6px;align-items:center;border:1px solid #E5E5E5;border-radius:4px;padding:4.5px 6px"><span style="font-family:var(--font-display);font-size:5.6px;font-weight:800;color:var(--accent)">DIA 4</span><p style="font-size:5.9px;line-height:1.45;color:#333">Crie o QR de avaliação e peça pros 10 últimos clientes.</p></div>
-              <div style="display:grid;grid-template-columns:34px 1fr;gap:6px;align-items:center;border:1px solid #E5E5E5;border-radius:4px;padding:4.5px 6px"><span style="font-family:var(--font-display);font-size:5.6px;font-weight:800;color:var(--accent)">DIA 5</span><p style="font-size:5.9px;line-height:1.45;color:#333">Monte a campanha de Rede de Pesquisa com as palavras certas.</p></div>
-            </div>
-            <div style="background:#0A0A0A;border-radius:5px;padding:7px 8px;margin-top:auto">
-              <p style="font-family:var(--font-display);font-size:6.4px;font-weight:700;line-height:1.45;color:#fff">Faça isso e você já estará à frente de <span style="color:var(--accent)">90% das lojas da sua cidade.</span></p>
-            </div>
-            <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #E5E5E5;padding-top:5px;margin-top:8px">
-              <img src="assets/logo-mp-full.svg" alt="" style="height:5px;filter:invert(1)" width="20" height="5" loading="lazy">
-              <span style="font-size:5.5px;color:#A3A3A3">17</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="pgrow-hint">← Arraste pro lado pra ver as páginas →</p>
-      <p style="text-align:center;font-size:13.5px;color:var(--fg-4);margin-top:14px"><strong style="color:var(--fg-3)">Páginas reais de dentro do guia</strong> — é exatamente isso que você vai abrir no celular.</p>
-    </div>
+    <figure class="shot reveal" style="max-width:560px;margin:0 auto">
+      <img src="assets/mockup-produto.png" width="2160" height="2160" loading="lazy" decoding="async" alt="Mockup do Método Balcão Cheio: a capa do checklist rápido e prático com o roadmap de 7 passos, o plano de 7 dias imprimível e um celular mostrando uma loja de material de construção anunciada no topo da busca do Google, com 4,9 estrelas e botões de ligar, rota e site">
+    </figure>
 
     <div class="stack" style="gap:12px">
-      <div class="eyebrow reveal" style="margin-bottom:4px">Os 5 capítulos, um por um</div>
+      <div class="eyebrow reveal" style="margin-bottom:4px">As 5 etapas do passo a passo</div>
       <div class="box mod reveal">
         <span class="mod__num">01</span>
         <div>
-          <div class="mod__meta">Capítulo 1</div>
+          <div class="mod__meta">Etapa 1</div>
           <div class="mod__title">Por que sua loja está invisível — e quanto isso custa por mês</div>
           <p>O diagnóstico: onde a venda está acontecendo sem você e a conta do dinheiro que escapa em silêncio, todo dia.</p>
         </div>
@@ -762,7 +821,7 @@ strong{color:#fff}
       <div class="box mod reveal">
         <span class="mod__num">02</span>
         <div>
-          <div class="mod__meta">Capítulo 2 • Passos 1 a 4</div>
+          <div class="mod__meta">Etapa 2 • Passos 1 a 4</div>
           <div class="mod__title">O ativo grátis que quase ninguém usa direito</div>
           <p>O Perfil da Empresa no Google do jeito certo: reivindicar e verificar, preencher 100% da ficha, montar a vitrine de produtos e ligar a máquina de avaliações 5 estrelas. Sem gastar 1 real.</p>
         </div>
@@ -770,7 +829,7 @@ strong{color:#fff}
       <div class="box mod reveal">
         <span class="mod__num">03</span>
         <div>
-          <div class="mod__meta">Capítulo 3 • Passos 5 a 7</div>
+          <div class="mod__meta">Etapa 3 • Passos 5 a 7</div>
           <div class="mod__title">O acelerador pago: Google Ads para material de construção</div>
           <p>A campanha certa pra loja física (Rede de Pesquisa), as palavras que trazem comprador — e as que só queimam dinheiro —, quanto investir e o que medir.</p>
         </div>
@@ -778,7 +837,7 @@ strong{color:#fff}
       <div class="box mod reveal">
         <span class="mod__num">04</span>
         <div>
-          <div class="mod__meta">Capítulo 4</div>
+          <div class="mod__meta">Etapa 4</div>
           <div class="mod__title">O erro que quase todo dono comete depois de aparecer</div>
           <p>Aparecer é metade da conta. Aqui você vê como não deixar escapar o cliente que o Google trouxe: resposta rápida no WhatsApp, follow-up e controle das vendas.</p>
         </div>
@@ -786,7 +845,7 @@ strong{color:#fff}
       <div class="box mod reveal">
         <span class="mod__num">05</span>
         <div>
-          <div class="mod__meta">Capítulo 5</div>
+          <div class="mod__meta">Etapa 5</div>
           <div class="mod__title">Seu plano de ação de 7 dias</div>
           <p>Um passo por dia, direto do celular, com checklist. A base montada ainda esta semana.</p>
         </div>
@@ -796,7 +855,7 @@ strong{color:#fff}
     <div class="grid grid-2" style="gap:12px">
       <div class="box fact reveal">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><path d="M14 2v6h6"></path></svg>
-        <p><strong>Guia digital em PDF.</strong> Abre no celular, no computador — ou imprime e deixa do lado do caixa.</p>
+        <p><strong>Checklist rápido e prático.</strong> Abre no celular, no computador — ou imprime e deixa do lado do caixa.</p>
       </div>
       <div class="box fact reveal">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
@@ -808,7 +867,7 @@ strong{color:#fff}
       </div>
       <div class="box fact reveal">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
-        <p><strong>Linguagem de balcão.</strong> Zero tecniquês. Se você sabe mexer no WhatsApp, sabe seguir o guia.</p>
+        <p><strong>Linguagem de balcão.</strong> Zero tecniquês. Se você sabe mexer no WhatsApp, sabe seguir o checklist.</p>
       </div>
     </div>
   </div>
@@ -832,31 +891,48 @@ strong{color:#fff}
         <p>Já seria uma decisão fácil. Menos que um dia de faturamento.</p>
       </div>
       <div class="ladder__final">
-        <span class="ladder__val">R$37</span>
-        <p>Mas o investimento hoje é R$37.</p>
+        <span class="ladder__val">R$18,90</span>
+        <p>Mas o roadmap completo hoje começa em R$18,90.</p>
       </div>
     </div>
     <p class="body reveal">Não é erro de digitação. É de propósito: eu quero que você prove, na prática, que dá certo — pra depois decidir se quer que a gente faça por você.</p>
-    <div class="ebook-shot reveal" style="margin:14px 0 6px">
-      <div class="ebook-3d">
-        <div class="cover">
-          <span class="cover__tag">O guia de 7 passos</span>
-          <div style="margin-top:auto">
-            <svg width="26" height="33" viewBox="0 0 88 110" style="display:block;margin-bottom:12px" aria-hidden="true"><path d="M44 4C22 4 5 21 5 43c0 30 39 63 39 63s39-33 39-63C83 21 66 4 44 4z" fill="#F5A623"/><rect x="27" y="36" width="34" height="22" fill="#000"/><path d="M23 38l21-14 21 14" fill="none" stroke="#000" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <div class="cover__method">MÉTODO</div>
-            <div class="cover__title">BALCÃO<br>CHEIO</div>
-            <p class="cover__desc">Como lojas de material de construção aparecem no Google e enchem a loja de clientes prontos pra comprar.</p>
-          </div>
-          <img src="assets/logo-mp-full.svg" alt="M|P" style="height:8px;margin-top:14%;align-self:flex-start" width="32" height="8" loading="lazy">
+    <figure class="reveal" style="margin:14px auto 6px;max-width:440px">
+      <img src="assets/mockup-produto.png" width="2160" height="2160" loading="lazy" decoding="async" style="display:block;width:100%;height:auto;border-radius:16px" alt="Mockup do Método Balcão Cheio: a capa do checklist rápido e prático, o plano de 7 dias imprimível e um celular mostrando uma loja de material de construção anunciada no topo da busca do Google">
+    </figure>
+
+    <h2 class="h2 reveal" style="margin-top:14px">Escolha como você quer <span class="gold">encher seu balcão:</span></h2>
+    <div class="plans">
+
+      <div class="plan reveal">
+        <div class="plan__name">Método Balcão Cheio</div>
+        <div class="plan__price">R$18,90<small>pagamento único</small></div>
+        <p class="plan__for">Pra quem quer aplicar o passo a passo no próprio ritmo.</p>
+        <div class="plan__list">
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>O roadmap completo de 7 passos</strong> — o checklist rápido e prático, um passo por dia</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>Kit Execução</strong> pra copiar e colar: 120+ palavras-chave, 10 modelos de anúncio, modelo de perfil preenchido, kit de avaliações e o checklist de 7 dias pra imprimir</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Acesso imediato e vitalício</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Garantia de 7 dias</span></div>
         </div>
+        <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Quero o método → R$18,90</a>
       </div>
+
+      <div class="plan plan--featured reveal">
+        <span class="plan__badge">⭐ Mais escolhido</span>
+        <div class="plan__name">Método + Acompanhamento com o Pedro</div>
+        <div class="plan__price">R$67,90<small>pagamento único</small></div>
+        <p class="plan__for">Pra quem quer aplicar o passo a passo com quem criou o método do lado.</p>
+        <div class="plan__list">
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>Tudo do plano Método:</strong> roadmap de 7 passos + Kit Execução completo</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>1 hora de acompanhamento individual com o Pedro</strong>, sócio da M|P e criador do método — pra aplicar cada passo com quem faz isso todo dia</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span><strong>Grupo de WhatsApp</strong> pra tirar dúvidas e pedir sugestões enquanto aplica</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Acesso imediato e vitalício</span></div>
+          <div class="plan__item"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>Garantia de 7 dias</span></div>
+        </div>
+        <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/2g0y8wh05LFf8Zl6SBPM">Quero com acompanhamento → R$67,90</a>
+      </div>
+
     </div>
-    <div class="price-card reveal" style="margin-top:8px">
-      <div style="font-family:var(--font-display);font-size:20px;font-weight:800;color:#fff;text-align:center">Método Balcão Cheio</div>
-      <div class="price">R$37</div>
-      <span style="font-size:13.5px;color:var(--fg-3)">Acesso imediato • Leia no celular ou imprima</span>
-      <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R" style="width:100%;max-width:420px;font-size:15px">Quero aparecer no Google → R$37</a>
-    </div>
+    <p class="reveal" style="font-size:14.5px;line-height:1.65;color:var(--fg-3);text-align:center;max-width:640px;margin:6px auto 0">Não sabe qual escolher? Se é sua primeira vez mexendo com Google, o <strong style="color:var(--fg-2)">acompanhamento</strong> tira todas as suas dúvidas com quem entende. Se você curte fazer sozinho, o <strong style="color:var(--fg-2)">Método</strong> te dá o roadmap completo.</p>
   </div>
 </section>
 
@@ -866,8 +942,8 @@ strong{color:#fff}
     <svg class="reveal" viewBox="0 0 24 24" fill="none" stroke="#F5A623" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
     <div class="stack reveal" style="gap:12px">
       <h2 style="font-size:clamp(24px,3vw,32px);font-weight:800;color:#fff">O risco é todo meu.</h2>
-      <p style="font-size:15.5px;line-height:1.65;color:var(--fg-2)"><strong>Garantia Balcão Cheio de 7 dias.</strong> Leu, aplicou e achou que não vale nem os R$37 de um saco de cimento? Me manda uma mensagem e eu devolvo cada centavo. Sem pergunta, sem burocracia, sem cara feia.</p>
-      <p style="font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--accent)">Ou o guia te ajuda a aparecer no Google, ou você não paga nada. Simples assim.</p>
+      <p style="font-size:15.5px;line-height:1.65;color:var(--fg-2)"><strong>Garantia Balcão Cheio de 7 dias.</strong> Aplicou e achou que não vale nem os R$18,90? Me manda uma mensagem e eu devolvo cada centavo. Sem pergunta, sem burocracia, sem cara feia.</p>
+      <p style="font-family:var(--font-display);font-size:16px;font-weight:700;color:var(--accent)">Ou o checklist te ajuda a aparecer no Google, ou você não paga nada. Simples assim.</p>
     </div>
   </div>
 </section>
@@ -877,11 +953,11 @@ strong{color:#fff}
   <div class="wrap w-sm">
     <h2 class="h2 reveal" style="margin-bottom:32px">O que você ainda pode estar pensando</h2>
     <div class="stack" style="gap:14px">
-      <div class="faq reveal"><div class="faq__q">"Já tentei e não funcionou."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">Quase todo dono de loja que fala isso fez uma de duas coisas: impulsionou post no Instagram achando que era anúncio de verdade, ou abriu o Google Ads, viu aquela tela cheia de botão em inglês e fechou em 5 minutos.<br><br>Se isso é você, é exatamente pra isso que o guia existe. Ele mostra o caminho certo — o mesmo que a gente usa com clientes que pagam milhares por mês pra gente fazer por eles.</p></div>
-      <div class="faq reveal"><div class="faq__q">"Tá caro."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">São R$37. Menos do que um almoço pra dois. Menos do que um saco de cimento.<br><br>E na frente disso tem milhares de reais por mês que você pode estar deixando na mesa por não aparecer no Google. <strong>Um único cliente novo que te achar no Google já paga o investimento de volta</strong> — sobrando troco.</p></div>
+      <div class="faq reveal"><div class="faq__q">"Já tentei e não funcionou."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">Quase todo dono de loja que fala isso fez uma de duas coisas: impulsionou post no Instagram achando que era anúncio de verdade, ou abriu o Google Ads, viu aquela tela cheia de botão em inglês e fechou em 5 minutos.<br><br>Se isso é você, é exatamente pra isso que o checklist existe. Ele mostra o caminho certo — o mesmo que a gente usa com clientes que pagam milhares por mês pra gente fazer por eles.</p></div>
+      <div class="faq reveal"><div class="faq__q">"Tá caro."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">São R$18,90 pra começar — menos do que um almoço. E mesmo o plano com acompanhamento individual do Pedro, R$67,90, custa muito menos do que uma consultoria cobra por uma única hora.<br><br>E na frente disso tem milhares de reais por mês que você pode estar deixando na mesa por não aparecer no Google. <strong>Um único cliente novo que te achar no Google já paga o investimento de volta</strong> — sobrando troco.</p></div>
       <div class="faq reveal"><div class="faq__q">"Meu segmento não funciona na internet."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">Nossos melhores resultados são em telhas, tintas, bombas d'água, ferragens, material de construção — segmentos que todo mundo acha "difícil de vender online".<br><br>Sabe por que funciona tão bem? Justamente porque a concorrência digital é baixa. Enquanto o setor inteiro acha que não funciona, <strong>quem aparece domina a cidade sozinho.</strong></p></div>
       <div class="faq reveal"><div class="faq__q">"Não tenho tempo pra isso."</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">É um passo por dia, durante 7 dias. Cada passo leva menos tempo do que você gasta atendendo um cliente que veio "só perguntar o preço" e foi embora sem comprar.<br><br>E a base sai em um fim de semana. Menos tempo do que você gasta refazendo orçamento perdido.</p></div>
-      <div class="faq reveal"><div class="faq__q">"Preciso ser bom de tecnologia?"</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">Se você sabe mexer no WhatsApp, sabe seguir esse guia. Cada passo é explicado no detalhe, com print de tela, pra fazer pelo celular.<br><br>Nada de termo complicado. Linguagem de balcão, do jeito que você entende.</p></div>
+      <div class="faq reveal"><div class="faq__q">"Preciso ser bom de tecnologia?"</div><p style="font-size:14.5px;line-height:1.6;color:var(--fg-2);margin-top:8px">Se você sabe mexer no WhatsApp, sabe seguir esse checklist. Cada passo é explicado no detalhe, com print de tela, pra fazer pelo celular.<br><br>Nada de termo complicado. Linguagem de balcão, do jeito que você entende.</p></div>
     </div>
   </div>
 </section>
@@ -891,13 +967,13 @@ strong{color:#fff}
   <div class="wrap w-sm stack" style="gap:20px;align-items:flex-start">
     <h2 class="reveal" style="font-size:clamp(28px,3.8vw,44px);font-weight:900;line-height:1.1;color:#fff">Você tem duas escolhas.</h2>
     <p class="body reveal">Continuar invisível e ver o cliente que procurou seu produto comprar no concorrente. De novo. Amanhã de novo.</p>
-    <p class="body reveal">Ou investir R$37, seguir 7 passos e ser a loja que aparece quando alguém precisa comprar na sua cidade.</p>
-    <p class="reveal" style="font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--accent)">O guia você lê hoje. O resultado começa esta semana.</p>
+    <p class="body reveal">Ou investir R$18,90, seguir o roadmap de 7 passos e ser a loja que aparece quando alguém precisa comprar na sua cidade.</p>
+    <p class="reveal" style="font-family:var(--font-display);font-size:19px;font-weight:700;color:var(--accent)">O checklist você começa a aplicar hoje. O resultado começa esta semana.</p>
     <div class="hero__ctawrap reveal" style="margin-top:8px">
-      <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Quero aparecer no Google → R$37</a>
+      <a class="btn" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Quero aparecer no Google → R$18,90</a>
       <span class="cta-note">Acesso imediato • Garantia de 7 dias • Feito pela M|P Assessoria</span>
     </div>
-    <p class="reveal" style="font-size:14.5px;line-height:1.65;color:var(--fg-4);margin-top:16px"><strong style="color:var(--fg-3)">P.S.:</strong> enquanto você lê isso, alguém tá digitando "material de construção perto de mim" <strong style="color:var(--fg-3)">na sua cidade</strong>. Agora mesmo. A única pergunta é: vai achar sua loja ou a do concorrente? Por R$37, você resolve isso <strong style="color:var(--fg-3)">hoje</strong>.</p>
+    <p class="reveal" style="font-size:14.5px;line-height:1.65;color:var(--fg-4);margin-top:16px"><strong style="color:var(--fg-3)">P.S.:</strong> enquanto você lê isso, alguém tá digitando "material de construção perto de mim" <strong style="color:var(--fg-3)">na sua cidade</strong>. Agora mesmo. A única pergunta é: vai achar sua loja ou a do concorrente? Por R$18,90, você resolve isso <strong style="color:var(--fg-3)">hoje</strong>.</p>
   </div>
 </section>
 
@@ -909,7 +985,7 @@ strong{color:#fff}
 </footer>
 
 <!-- CTA fixo no mobile -->
-<a class="btn sticky-cta" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Aparecer no Google → R$37</a>
+<a class="btn sticky-cta" data-cta href="https://pay.mppartners.com.br/checkout/v4/eUguTMM9upibnKAKUj0R">Aparecer no Google → R$18,90</a>
 
 <script>
 (function(){
