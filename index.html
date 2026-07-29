@@ -364,6 +364,14 @@ strong{color:#fff}
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease) var(--d,0ms),transform .7s var(--ease) var(--d,0ms)}
 .reveal.in{opacity:1;transform:none}
 
+/* ---------- Máquina de escrever (H1 da hero) ---------- */
+/* Os spans já ocupam o espaço final desde o 1º paint — só a visibilidade muda, zero reflow */
+.tw-char{visibility:hidden}
+.tw-char.on{visibility:visible}
+.tw-caret{display:inline-block;width:0;position:relative}
+.tw-caret::after{content:"";position:absolute;left:1px;top:.06em;height:.95em;border-left:.08em solid var(--accent);animation:twBlink .85s steps(1) infinite}
+@keyframes twBlink{50%{opacity:0}}
+
 /* ============================================================
    RESPONSIVIDADE
    ============================================================ */
@@ -987,6 +995,48 @@ strong{color:#fff}
       setTimeout(showAll, 3000);
     }
   } catch(e){ showAll(); }
+
+  /* Máquina de escrever no H1 da hero — respeita reduced motion; sem JS o texto fica normal */
+  try {
+    var h1 = document.querySelector('.hero__h1');
+    if (h1 && !rm) {
+      h1.setAttribute('aria-label', h1.textContent);
+      var holder = document.createElement('span');
+      holder.setAttribute('aria-hidden','true');
+      while (h1.firstChild) holder.appendChild(h1.firstChild);
+      h1.appendChild(holder);
+      var chars = [];
+      (function split(node){
+        Array.prototype.slice.call(node.childNodes).forEach(function(n){
+          if (n.nodeType === 3) {
+            var frag = document.createDocumentFragment();
+            n.textContent.split('').forEach(function(ch){
+              var s = document.createElement('span');
+              s.className = 'tw-char';
+              s.textContent = ch;
+              frag.appendChild(s);
+              chars.push(s);
+            });
+            node.replaceChild(frag, n);
+          } else if (n.nodeType === 1) split(n);
+        });
+      })(holder);
+      var caret = document.createElement('span');
+      caret.className = 'tw-caret';
+      var ti = 0;
+      function type(){
+        if (ti >= chars.length){ setTimeout(function(){ if (caret.parentNode) caret.parentNode.removeChild(caret); }, 1400); return; }
+        var s = chars[ti++];
+        s.classList.add('on');
+        s.parentNode.insertBefore(caret, s.nextSibling);
+        var ch = s.textContent;
+        setTimeout(type, ch === ' ' ? 14 : (/[.,]/.test(ch) ? 300 : 27));
+      }
+      setTimeout(type, 300);
+    }
+  } catch(e){
+    document.querySelectorAll('.tw-char').forEach(function(s){ s.classList.add('on'); });
+  }
 
   /* Contadores animados */
   function fmt(n){ return n.toLocaleString('pt-BR'); }
